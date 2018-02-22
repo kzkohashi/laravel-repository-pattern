@@ -1,0 +1,21 @@
+<?php
+
+namespace DummyRootNamespaceInfrastracture\Repositories;
+
+use DummyRootNamespaceRepositories\DummyClass;
+use DummyRootNamespaceModels\DummyModel;
+
+class EloquentDummyClass implements  DummyClass
+{
+
+    protected $DummyVariable;
+
+    /**
+     * EloquentDummyClass constructor.
+     */
+    public function __construct(DummyModel $DummyVariable)
+    {
+        $this->DummyVariable = $DummyVariable;
+    }
+
+}
