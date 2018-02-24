@@ -26,6 +26,6 @@ class EloquentItemRepository implements  ItemRepository
 
     public function getList()
     {
-        return $this->item
+        return $this->item->all();
     }
 }
